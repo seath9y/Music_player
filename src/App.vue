@@ -5,10 +5,35 @@
       <router-link to="/todo">Todo</router-link>
     </div>
     <router-view/>
+    <div class="footer">
+      <Footer/>
+    </div>
   </div>
 </template>
 
+<script>
+// @ is an alias to /src
+import Footer from '@/components/Footer.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Footer
+  }
+}
+</script>
+
 <style lang="scss">
+body {
+    background-color: rgb(242, 242, 242);
+    height: 670px;
+}
+.footer {
+  // display: flex;
+  width: 850px;
+  justify-content: center;
+  margin: 0 auto;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,4 +51,5 @@
     }
   }
 }
+
 </style>
