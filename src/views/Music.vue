@@ -23,6 +23,7 @@
 import MusicHeader from '@/components/music/MusicHeader.vue'
 import MusicAside from '@/components/music/MusicAside.vue'
 import MusicContent from '@/components/music/MusicContent.vue'
+import axios from 'axios'
 
 export default {
   name: 'Music',
@@ -30,6 +31,17 @@ export default {
     MusicHeader,
     MusicAside,
     MusicContent
+  },
+  methods: {
+    getHomeInfo () {
+      // axios.get('/static/index.json').then(this.getHomeInfoSucc)
+    },
+    getHomeInfoSucc (res) {
+      console.log(res)
+    }
+  },
+  mounted () {
+    this.getHomeInfo()
   }
 }
 </script>

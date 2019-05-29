@@ -1,14 +1,18 @@
 <template>
   <div class="other">
-111
+  111
+  <other-swiper></other-swiper>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import OtherSwiper from '@/components/other/OtherSwiper.vue'
 export default {
-  name: 'Other'
+  name: 'Other',
+  components: {
+    OtherSwiper
+  }
 }
 </script>
 <style lang="scss">
