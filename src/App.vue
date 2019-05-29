@@ -2,9 +2,12 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Music</router-link> |
-      <router-link to="/todo">Todo</router-link>
+      <router-link to="/todo">Todo</router-link> |
+      <router-link to="/other">Other</router-link>
     </div>
-    <router-view/>
+    <div class="session">
+      <router-view/>
+    </div>
     <div class="footer">
       <Footer/>
     </div>
@@ -28,6 +31,7 @@ body {
     background-color: rgb(242, 242, 242);
     height: 670px;
 }
+
 .footer {
   // display: flex;
   width: 850px;

@@ -1,27 +1,18 @@
 <template>
-  <div class="todo">
-    <TodoHeader/>
-    <TodoList/>
+  <div class="other">
+111
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TodoHeader from '@/components/todo/TodoHeader.vue'
-import TodoList from '@/components/todo/TodoList.vue'
 
 export default {
-  name: 'Todo',
-  components: {
-    TodoHeader,
-    TodoList
-  }
+  name: 'Other'
 }
-
 </script>
-
 <style lang="scss">
-.todo {
+.other {
   // width: 850px;
   // justify-content: center;
   // height: 640px;
@@ -42,5 +33,4 @@ export default {
     background-color: white;
     overflow: auto;
 }
-
 </style>

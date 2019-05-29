@@ -119,6 +119,8 @@ export default {
 
 <style lang="scss">
 .music-content {
+    border-right: 2px solid #d6dadf;
+    background: #fff;
     overflow: auto;
     flex: 3;
 }
