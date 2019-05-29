@@ -3,18 +3,9 @@
     <MusicHeader/>
     <MusicAside/>
     <MusicContent/>
-    <!-- <audio id='id-audio-1'>
-        <source src="music/1.mp3">
+    <audio v-for="item of musicList" :id="'id-audio-' + item.id" :key="item.id">
+        <source :src="item.url">
     </audio>
-    <audio id='id-audio-2'>
-        <source src="music/2.mp3">
-    </audio>
-    <audio id='id-audio-3'>
-        <source src="music/3.mp3">
-    </audio>
-    <audio id='id-audio-4'>
-        <source src="music/4.mp3">
-    </audio> -->
   </div>
 </template>
 
@@ -32,9 +23,26 @@ export default {
     MusicAside,
     MusicContent
   },
+  data () {
+    return {
+      musicList: [{
+        id: 1,
+        url: 'music/1.mp3'
+      }, {
+        id: 2,
+        url: 'music/2.mp3'
+      }, {
+        id: 3,
+        url: 'music/3.mp3'
+      }, {
+        id: 4,
+        url: 'music/4.mp3'
+      }]
+    }
+  },
   methods: {
     getHomeInfo () {
-      // axios.get('/static/index.json').then(this.getHomeInfoSucc)
+      axios.get('1.json').then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
       console.log(res)

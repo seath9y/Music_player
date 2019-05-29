@@ -28,7 +28,7 @@ export default {
     right: -610px;
     width: 30px;
     height: 30px;
-    // background: url('img/ed.png');
+    background: url('/img/ed.png');
     bottom: 1px;
 }
 
@@ -38,7 +38,7 @@ export default {
     right: -610px;
     width: 30px;
     height: 30px;
-    // background: url('img/com.png');
+    background: url('/img/com.png');
     bottom: 1px;
 }
 
@@ -48,7 +48,7 @@ export default {
     right: -636px;
     width: 30px;
     height: 30px;
-    // background: url('img/del.png');
+    background: url('/img/del.png');
     bottom: 1px;
 }
 

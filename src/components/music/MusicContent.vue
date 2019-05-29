@@ -1,6 +1,6 @@
 <template>
     <div class="music-content">
-        <!-- <table id='id-table'>
+        <table id='id-table'>
             <tr>
                 <th>
                     <img id='id-musicth-1' src="img/t1.png">
@@ -105,7 +105,7 @@
                     <div class="title3">東方爆音ジャズ9</div>
                 </th>
             </tr>
-        </table> -->
+        </table>
     </div>
 </template>
 
@@ -123,20 +123,6 @@ export default {
     background: #fff;
     overflow: auto;
     flex: 3;
-}
-
-table {
-    font-size: small;
-    margin: auto;
-}
-
-th {
-    padding: 13px 7px;
-}
-
-table img {
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .music-content::-webkit-scrollbar {
@@ -158,6 +144,36 @@ table img {
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     background: #EDEDED;
+}
+
+table {
+    font-size: small;
+    margin: auto;
+}
+
+th {
+    padding: 13px 7px;
+}
+
+table img {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title1 {
+    color: rgb(144, 153, 158);
+}
+
+.title2 {
+    color: rgb(198, 202, 205);
+    font-size: 70%;
+    font-weight: normal;
+}
+
+.title3 {
+    color: rgb(198, 202, 205);
+    font-size: 70%;
+    font-weight: normal;
 }
 
 </style>

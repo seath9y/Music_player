@@ -1,10 +1,10 @@
 <template>
-    <div class="music-header">
-        <div id='music-blur'></div>
-        <div>
-            <input type="text" id='id-search'>
-        </div>
+  <div class="music-header">
+    <div id='music-blur'></div>
+    <div>
+      <input type="text" id='id-search'>
     </div>
+  </div>
 </template>
 
 <script>
@@ -23,7 +23,7 @@ export default {
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.5;
     position: absolute;
-    top: 86px;
+    top: 67px;
     z-index: 99px;
     box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .3) inset, 0 0.01em 1em rgba(0, 0, 0, 0.6);
     margin: 0 auto;
@@ -55,7 +55,7 @@ export default {
     top: 15px;
     left: 26px;
     width: 144px;
-    // background-image: url(img/search.png);
+    background-image: url(/img/search.png);
     background-repeat: no-repeat;
     background-position: center right;
 }

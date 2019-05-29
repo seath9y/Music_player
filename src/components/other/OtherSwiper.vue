@@ -25,15 +25,15 @@ export default {
       swiperOption: {
         pagination: '.swiper-pagination'
       },
-      swiperList: [{
-        id: '0',
-        url: '/static/swiper/0.jpg'
+      "swiperList": [{
+        "id": 1,
+        "url": "swiper/1.jpg"
       }, {
-        id: '1',
-        url: '/static/swiper/1.jpg'
+        "id": 2,
+        "url": "swiper/2.jpg"
       }, {
-        id: '2',
-        url: '/static/swiper/2.jpg'
+        "id": 3,
+        "url": "swiper/3.jpg"
       }]
     }
   },

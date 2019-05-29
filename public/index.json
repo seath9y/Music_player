@@ -1,0 +1,28 @@
+{
+  "musicList": [{
+    "id": 1,
+    "url": "music/1.mp3"
+  }, {
+    "id": 2,
+    "url": "music/2.mp3"
+  }, {
+    "id": 3,
+    "url": "music/3.mp3"
+  }, {
+    "id": 4,
+    "url": "music/4.mp3"
+  }],
+  "swiperList": [{
+    "id": 1,
+    "url": "swiper/1.jpg"
+  }, {
+    "id": 2,
+    "url": "swiper/2.jpg"
+  }, {
+    "id": 3,
+    "url": "swiper/3.jpg"
+  }, {
+    "id": 4,
+    "url": "swiper/4.jpg"
+  }]
+}
