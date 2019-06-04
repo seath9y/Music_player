@@ -40,7 +40,7 @@ body {
 }
 @media screen and (max-width: 1025px) {
     .footer {
-          width: 100%;
+      display: none;
     }
 }
 

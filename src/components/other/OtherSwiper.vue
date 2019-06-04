@@ -54,4 +54,11 @@ export default {
 .swiper-pagination-bullet-active {
   background:white;
 }
+
+@media screen and (max-width: 1025px) {
+.swiper-img {
+  width:100%;
+  height:200px
+}
+}
 </style>

@@ -1,13 +1,13 @@
 <template>
   <div class="other">
-  <other-swiper></other-swiper>
-  <!-- <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <button class="btn btn-primary">测试按钮</button>
+    <div class="container">
+    <other-swiper></other-swiper>
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
     </div>
-  </div>
-</div> -->
   </div>
 </template>
 
@@ -47,5 +47,17 @@ export default {
     width: 850px;
     height: 640px;
     margin: 0 auto;
+}
+.container {
+    width: 840px;
+    height: 640px;
+}
+@media screen and (max-width: 400px) {
+.other {
+    width: 370px;
+  }
+  .container {
+    width: 370px;
+}
 }
 </style>
