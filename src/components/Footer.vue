@@ -107,7 +107,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .music-footer {
     display: block;
     width: 850px;
@@ -247,5 +247,17 @@ input[type=range]::-webkit-slider-thumb {
   bottom: 2px;
   font-size: small;
   color: #aaaaaa;
+}
+
+@media screen and (max-width: 1024px) {
+  .music-footer {
+    width: 100%;
+  }
+  .mus {
+    width: 100%;
+  }
+  .blur {
+    width: 100%;
+  }
 }
 </style>

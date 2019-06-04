@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 body {
     background-color: rgb(242, 242, 242);
     height: 670px;
@@ -38,6 +38,12 @@ body {
   justify-content: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 1025px) {
+    .footer {
+          width: 100%;
+    }
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -46,8 +52,7 @@ body {
   color: #2c3e50;
 }
 #nav {
-
-  padding: 20px;
+  padding: 23px;
   a {
     font-weight: bold;
     color: #2c3e50;

@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .music-content {
     border-right: 2px solid #d6dadf;
     background: #fff;

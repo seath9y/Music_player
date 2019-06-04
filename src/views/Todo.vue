@@ -71,13 +71,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .todo {
   height: 650px;
   position: flex;
   flex-direction: column;
   border-width: 3px;
-  border-top-width: 0px;
+  border-top-width: 3px;
   border-color: rgb(220, 220, 220);
   border-style: solid;
   display: block;
@@ -85,13 +85,17 @@ export default {
   width: 850px;
   background-color: white;
   overflow: auto;
+  display: flex;
+  width: 850px;
+  height: 640px;
+  margin: 0 auto;
 }
 .todo-header {
   text-align: left;
 }
 .h1 {
   left: 70px;
-  line-height: 55px;
+  line-height: 10px;
   display: inline-block;
   position: relative;
   font-size: 1.8em;
@@ -119,8 +123,8 @@ hr {
 #button-add {
   display: inline-block;
   position: relative;
-  right: -338px;
-  top: 8px;
+  right: -386px;
+  top: 13px;
   width: 33px;
   height: 33px;
   background: url("/img/plus.png");
@@ -132,7 +136,7 @@ hr {
 
 section {
   background-color: rgb(250, 250, 250);
-  height: 60px;
+  height: 86px;
   padding: 20px 30px;
   overflow: auto;
 }
@@ -148,7 +152,7 @@ section {
   position: static;
   display: block;
   margin: 20px;
-  width: 710px;
+  width: 98%;
 }
 #todo {
   text-align: left;
@@ -160,7 +164,7 @@ section {
 .button-delete {
   border-width: 0px;
   position: relative;
-  right: -671px;
+  right: -663px;
   width: 30px;
   height: 30px;
   background: url("/img/del.png");
@@ -176,7 +180,7 @@ section {
   display: inline-block;
   position: relative;
   height: 32px;
-  bottom: 1px;
+  bottom: 9px;
   width: 4px;
 }
 
@@ -190,8 +194,9 @@ section {
   padding: 0 16px;
   transition: background 0.3s ease-in-out;
   width: 30%;
-  left: 320px;
+  left: 374px;
   position: relative;
+  top: 3px;
 }
 .todo-input:focus {
   outline: none;

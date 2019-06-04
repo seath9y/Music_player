@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Music from './views/Music.vue'
+import Other from './views/Other.vue'
 
 Vue.use(Router)
 
@@ -18,7 +19,7 @@ export default new Router({
     }, {
       path: '/other',
       name: 'other',
-      component: () => import('./views/Other.vue')
+      component: Other
     }
   ]
 })

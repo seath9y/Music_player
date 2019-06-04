@@ -65,7 +65,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .music {
     display: flex;
     width: 850px;

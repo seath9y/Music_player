@@ -13,11 +13,11 @@
 export default {
   name: 'MusicAside',
   props: {
-    musicList : Array
+    musicList: Array
   },
   methods: {
     asideMusicClick (index) {
-      this.$emit('asideMusicClick',index)
+      this.$emit('asideMusicClick', index)
     }
   }
 
@@ -47,10 +47,10 @@ export default {
     top: 132px;
     cursor: pointer;
 }
+
 ul {
   text-align: left;
 }
-
 
 li {
   font-family: 'KaiTi_GB2312';
