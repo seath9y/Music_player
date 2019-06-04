@@ -2,7 +2,7 @@
   <div class="music-header">
     <div id='music-blur'></div>
     <div>
-      <input type="text" id='id-search'>
+      <!-- <input type="text" id='id-search'> -->
     </div>
   </div>
 </template>

@@ -2,23 +2,108 @@
     <div class="music-footer">
         <div class="blur"></div>
         <div class="mus">
-            <img id='img-1' src="img/play70.png" alt="">
-            <img id='img-2' src="img/pause65.png" alt="">
-            <img id='img-3' src="img/next65.png" alt="">
-            <img id='img-4' src="img/previous65.png" alt="">
+            <img id='img-1' src="img/play70.png" alt="" @click='playClick'>
+            <img id='img-2' src="img/pause65.png" alt="" @click='pauseClick'>
+            <img id='img-3' src="img/next65.png" alt="" @click='nextClick'>
+            <img id='img-4' src="img/previous65.png" alt="" @click='previousClick'>
             <span id='footer-title'></span>
-            <span id='currentTime'></span>
-            <span id='duration'></span>
-            <input id='range-time' type="range" value="0.1">
+            <span id='currentTime'>0.00</span>
+            <span id='duration'>0.00</span>
+            <input id='range-time' type="range" value="0.1" @change='timeChange'>
         </div>
     </div>
 </template>
 
 <script>
+import axios from 'axios'
 
 export default {
-  name: 'MusicFooter'
-
+  name: 'MusicFooter',
+  data () {
+    return {
+      musicList: [],
+      value: 0
+    }
+  },
+  methods: {
+    play (id) {
+      let audio = document.getElementById(`id-audio-${id}`)
+      audio.play()
+      this.$store.dispatch('changeCurrentId', id)
+    },
+    pause (id) {
+      let audio = document.getElementById(`id-audio-${id}`)
+      audio.currentTime = 0
+      audio.pause()
+    },
+    getFooterInfo () {
+      axios.get('index.json').then(this.getFooterInfoSucc)
+    },
+    getFooterInfoSucc (res) {
+      res = res.data
+      this.musicList = res.musicList
+    },
+    playClick () {
+      let id = this.$store.state.currentId
+      let audio = document.getElementById(`id-audio-${id}`)
+      audio.play()
+    },
+    pauseClick () {
+      let id = this.$store.state.currentId
+      let audio = document.getElementById(`id-audio-${id}`)
+      audio.pause()
+    },
+    nextClick () {
+      let id = this.$store.state.currentId
+      this.pause(id)
+      if (id + 1 < 5) {
+        id = (id + 1)
+      } else {
+        id = 1
+      }
+      this.play(id)
+    },
+    previousClick () {
+      let id = this.$store.state.currentId
+      this.pause(id)
+      if (id - 1 > 0) {
+        id = (id - 1)
+      } else {
+        id = 4
+      }
+      this.play(id)
+    },
+    timeChange () {
+      let target = document.getElementById('range-time')
+      this.value = target.value
+      let valStr = this.value + '% 100%'
+      target.style['background-size'] = valStr
+      let id = this.$store.state.currentId
+      let audio = document.getElementById(`id-audio-${id}`)
+      audio.currentTime = this.value / 100 * audio.duration
+    },
+    run () {
+      let that = this
+      setInterval(function () {
+        let id = that.$store.state.currentId
+        let audio = document.getElementById(`id-audio-${id}`)
+        if (id !== false) {
+          let currentTime = (audio.currentTime / 60).toFixed(2)
+          let duration = audio.duration / 60
+          document.querySelector('#currentTime').textContent = currentTime
+          let valStr = (currentTime / duration).toFixed(2) * 100 + '% 100%'
+          document.querySelector('#range-time').style['background-size'] = valStr
+          let value = (currentTime / duration).toFixed(2) * 100
+          document.querySelector('#range-time').value = value
+          document.querySelector('#duration').textContent = duration.toFixed(2)
+        }
+      }, 1000 / 30)
+    }
+  },
+  mounted () {
+    this.getFooterInfo()
+    this.run()
+  }
 }
 </script>
 
@@ -105,7 +190,6 @@ export default {
     font-size: small;
 }
 
-
 #range-time {
   z-index: 200;
   position: absolute;
@@ -148,7 +232,6 @@ input[type=range]::-webkit-slider-thumb {
   border: solid 1px #ddd;
   /*设置边框*/
 }
-
 
 #currentTime {
   left: 352px;

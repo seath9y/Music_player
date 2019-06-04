@@ -57,7 +57,7 @@ export default {
       this.save()
     },
     deleteClick (index) {
-      this.todoList.splice(index,1)
+      this.todoList.splice(index, 1)
       this.save()
     }
   },
@@ -215,7 +215,6 @@ section {
 .button:hover {
   background: #00c8ff;
 }
-
 
 .todo::-webkit-scrollbar {
     /*滚动条整体样式*/

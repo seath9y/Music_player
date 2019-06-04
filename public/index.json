@@ -1,16 +1,32 @@
 {
   "musicList": [{
     "id": 1,
-    "url": "music/1.mp3"
+    "img": "music/t1.png",
+    "url": "music/1.mp3",
+    "title1": "歳月-雲流れ",
+    "title2": "Foxtail-Grass Studio",
+    "title3": "なつかぜメモリア"
   }, {
     "id": 2,
-    "url": "music/2.mp3"
+    "img": "music/t2.png",
+    "url": "music/2.mp3",
+    "title1": "My First Homage",
+    "title2": "Gavin Bryars",
+    "title3": "Hommages"
   }, {
     "id": 3,
-    "url": "music/3.mp3"
+    "img": "music/t3.png",
+    "url": "music/3.mp3",
+    "title1": "梦幻曲",
+    "title2": "李云迪",
+    "title3": "Portrait"
   }, {
     "id": 4,
-    "url": "music/4.mp3"
+    "img": "music/t4.png",
+    "url": "music/4.mp3",
+    "title1": "废狱摇篮曲",
+    "title2": "東京アクティブNEETs",
+    "title3": "東方爆音ジャズ9"
   }],
   "swiperList": [{
     "id": 1,

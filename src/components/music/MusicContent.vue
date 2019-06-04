@@ -2,109 +2,38 @@
     <div class="music-content">
         <table id='id-table'>
             <tr>
-                <th>
-                    <img id='id-musicth-1' src="music/t1.png">
-                    <div class="title1 t1">歳月-雲流れ</div>
-                    <div class="title2 t-1">Foxtail-Grass Studio</div>
-                    <div class="title3">なつかぜメモリア</div>
-                </th>
-                <th>
-                    <img id='id-musicth-2' src="music/t2.png">
-                    <div class="title1 t2">My First Homage</div>
-                    <div class="title2 t-2">Gavin Bryars</div>
-                    <div class="title3">Hommages</div>
-                </th>
-                <th>
-                    <img id='id-musicth-3' src="music/t3.png">
-                    <div class="title1 t3">梦幻曲</div>
-                    <div class="title2 t-3">李云迪</div>
-                    <div class="title3">Portrait</div>
-                </th>
-                <th>
-                    <img id='id-musicth-4' src="music/t4.png">
-                    <div class="title1 t4">废狱摇篮曲</div>
-                    <div class="title2 t-4">東京アクティブNEETs</div>
-                    <div class="title3">東方爆音ジャズ9</div>
+                <th v-for="item of musicList" :key='item.title1' >
+                    <img id='id-musicth-1' :src="item.img" @click='contentMusicClick(item.id)'>
+                    <div class="title1 t1">{{item.title1}}</div>
+                    <div class="title2 t-1">{{item.title2}}</div>
+                    <div class="title3">{{item.title3}}</div>
                 </th>
             </tr>
             <tr>
-                <th>
-                    <img id='id-musicth-1' src="music/t1.png">
-                    <div class="title1">歳月-雲流れ</div>
-                    <div class="title2">Foxtail-Grass Studio</div>
-                    <div class="title3">なつかぜメモリア</div>
-                </th>
-                <th>
-                    <img id='id-musicth-2' src="music/t2.png">
-                    <div class="title1">My First Homage</div>
-                    <div class="title2">Gavin Bryars</div>
-                    <div class="title3">Hommages</div>
-                </th>
-                <th>
-                    <img id='id-musicth-3' src="music/t3.png">
-                    <div class="title1">梦幻曲</div>
-                    <div class="title2">李云迪</div>
-                    <div class="title3">Portrait</div>
-                </th>
-                <th>
-                    <img id='id-musicth-4' src="music/t4.png">
-                    <div class="title1">废狱摇篮曲</div>
-                    <div class="title2">東京アクティブNEETs</div>
-                    <div class="title3">東方爆音ジャズ9</div>
+                <th v-for="item of musicList" :key='item.title2' >
+                    <img id='id-musicth-1' :src="item.img" @click='contentMusicClick(item.id)'>
+                    <div class="title1 t1">{{item.title1}}</div>
+                    <div class="title2 t-1">{{item.title2}}</div>
+                    <div class="title3">{{item.title3}}</div>
                 </th>
             </tr>
             <tr>
-                <th>
-                    <img id='id-musicth-1' src="music/t1.png">
-                    <div class="title1">歳月-雲流れ</div>
-                    <div class="title2">Foxtail-Grass Studio</div>
-                    <div class="title3">なつかぜメモリア</div>
-                </th>
-                <th>
-                    <img id='id-musicth-2' src="music/t2.png">
-                    <div class="title1">My First Homage</div>
-                    <div class="title2">Gavin Bryars</div>
-                    <div class="title3">Hommages</div>
-                </th>
-                <th>
-                    <img id='id-musicth-3' src="music/t3.png">
-                    <div class="title1">梦幻曲</div>
-                    <div class="title2">李云迪</div>
-                    <div class="title3">Portrait</div>
-                </th>
-                <th>
-                    <img id='id-musicth-4' src="music/t4.png">
-                    <div class="title1">废狱摇篮曲</div>
-                    <div class="title2">東京アクティブNEETs</div>
-                    <div class="title3">東方爆音ジャズ9</div>
+                <th v-for="item of musicList" :key='item.title3' >
+                    <img id='id-musicth-1' :src="item.img" @click='contentMusicClick(item.id)'>
+                    <div class="title1 t1">{{item.title1}}</div>
+                    <div class="title2 t-1">{{item.title2}}</div>
+                    <div class="title3">{{item.title3}}</div>
                 </th>
             </tr>
             <tr>
-                <th>
-                    <img id='id-musicth-1' src="music/t1.png">
-                    <div class="title1">歳月-雲流れ</div>
-                    <div class="title2">Foxtail-Grass Studio</div>
-                    <div class="title3">なつかぜメモリア</div>
-                </th>
-                <th>
-                    <img id='id-musicth-2' src="music/t2.png">
-                    <div class="title1">My First Homage</div>
-                    <div class="title2">Gavin Bryars</div>
-                    <div class="title3">Hommages</div>
-                </th>
-                <th>
-                    <img id='id-musicth-3' src="music/t3.png">
-                    <div class="title1">梦幻曲</div>
-                    <div class="title2">李云迪</div>
-                    <div class="title3">Portrait</div>
-                </th>
-                <th>
-                    <img id='id-musicth-4' src="music/t4.png">
-                    <div class="title1">废狱摇篮曲</div>
-                    <div class="title2">東京アクティブNEETs</div>
-                    <div class="title3">東方爆音ジャズ9</div>
+                <th v-for="item of musicList" :key='item.url' >
+                    <img id='id-musicth-1' :src="item.img" @click='contentMusicClick(item.id)'>
+                    <div class="title1 t1">{{item.title1}}</div>
+                    <div class="title2 t-1">{{item.title2}}</div>
+                    <div class="title3">{{item.title3}}</div>
                 </th>
             </tr>
+
         </table>
     </div>
 </template>
@@ -112,8 +41,15 @@
 <script>
 
 export default {
-  name: 'MusicContent'
-
+  name: 'MusicContent',
+  props: {
+    musicList: Array
+  },
+  methods: {
+    contentMusicClick (index) {
+      this.$emit('contentMusicClick', index)
+    }
+  }
 }
 </script>
 

@@ -1,28 +1,32 @@
 <template>
-    <div class="music-aside">
-      <ul id='id-ul'>
-          <li><span>&nbsp;&nbsp;歳月-雲流れ</span></li>
-          <li><span>&nbsp;&nbsp;My First Homage</span></li>
-          <li><span>&nbsp;&nbsp;梦幻曲</span></li>
-          <li><span>&nbsp;&nbsp;废狱摇篮曲</span></li>
-          <li><span>&nbsp;&nbsp;歳月-雲流れ</span></li>
-          <li><span>&nbsp;&nbsp;My First Homage</span></li>
-          <li><span>&nbsp;&nbsp;梦幻曲</span></li>
-          <li><span>&nbsp;&nbsp;废狱摇篮曲</span></li>
-      </ul>
-    </div>
+  <div class="music-aside">
+    <ul id='id-ul'>
+        <li v-for="item of musicList" :key='item.title1' @click="asideMusicClick(item.id)"><span>&nbsp;&nbsp;{{item.title1}}</span></li>
+        <li v-for="item of musicList" :key='item.title2' @click="asideMusicClick(item.id)"><span>&nbsp;&nbsp;{{item.title1}}</span></li>
+        <li v-for="item of musicList" :key='item.title3' @click="asideMusicClick(item.id)"><span>&nbsp;&nbsp;{{item.title1}}</span></li>
+    </ul>
+  </div>
 </template>
 
 <script>
 
 export default {
-  name: 'MusicAside'
+  name: 'MusicAside',
+  props: {
+    musicList : Array
+  },
+  methods: {
+    asideMusicClick (index) {
+      this.$emit('asideMusicClick',index)
+    }
+  }
 
 }
 </script>
 
 <style lang="scss">
 .music-aside {
+    // overflow: auto;
     flex: 1;
     background-color: rgba(224, 230, 235);
     border: 2px solid rgba(214, 218, 223);
@@ -41,6 +45,7 @@ export default {
     list-style-type: none;
     position: absolute;
     top: 132px;
+    cursor: pointer;
 }
 ul {
   text-align: left;
