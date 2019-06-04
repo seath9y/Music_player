@@ -11,6 +11,7 @@
     <div class="footer">
       <Footer/>
     </div>
+
   </div>
 </template>
 
@@ -24,6 +25,7 @@ export default {
     Footer
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
@@ -62,4 +64,9 @@ body {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .session {
+    width: 100%
+  }
+}
 </style>

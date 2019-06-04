@@ -27,13 +27,13 @@ export default {
       },
       swiperList: [{
         id: 1,
-        url: 'swiper/1.jpg'
+        url: 'https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1343818.jpg?max_age=2592000'
       }, {
         id: 2,
-        url: 'swiper/2.jpg'
+        url: 'https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1348778.jpg?max_age=2592000'
       }, {
         id: 3,
-        url: 'swiper/3.jpg'
+        url: 'https://y.gtimg.cn/music/common/upload/MUSIC_FOCUS/1348233.jpg?max_age=2592000'
       }]
     }
   }
@@ -47,7 +47,7 @@ export default {
 // }
 
 .swiper-img {
-  width:50%;
+  width:70%;
   height:250px
 }
 
@@ -57,7 +57,7 @@ export default {
 
 @media screen and (max-width: 1025px) {
 .swiper-img {
-  width:100%;
+  width:99%;
   height:200px
 }
 }

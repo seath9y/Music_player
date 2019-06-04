@@ -1,11 +1,17 @@
 <template>
   <div class="other">
-    <div class="container">
     <other-swiper></other-swiper>
+    <div class="container">
+          <div class="index__hd">
+          <h2 class="index__tit"><i class="icon_txt">歌单推荐</i></h2>
+      </div>
       <div class="row">
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
+        <img src="img/g1.png" class="col-md-1 hidd">
+        <img src="img/g1.png" class="col-md-3">
+        <img src="img/g2.png" class="col-md-1 hidd">
+        <img src="img/g2.png" class="col-md-3">
+        <img src="img/g3.png" class="col-md-1 hidd">
+        <img src="img/g3.png" class="col-md-3">
       </div>
     </div>
   </div>
@@ -48,6 +54,9 @@ export default {
     height: 640px;
     margin: 0 auto;
 }
+.row {
+  text-align: center
+}
 .container {
     width: 840px;
     height: 640px;
@@ -58,6 +67,9 @@ export default {
   }
   .container {
     width: 370px;
+}
+.hidd {
+  display: none;
 }
 }
 </style>
