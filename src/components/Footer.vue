@@ -61,7 +61,7 @@ export default {
 }
 .mus {
     position: absolute;
-    bottom: 0px;
+    bottom: 8px;
     width: 850px;
     height: 50px;
     z-index: 200;

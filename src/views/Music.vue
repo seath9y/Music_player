@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('1.json').then(this.getHomeInfoSucc)
+      axios.get('index.json').then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
       console.log(res)
