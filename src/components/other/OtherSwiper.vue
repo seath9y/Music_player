@@ -45,14 +45,16 @@ export default {
 //   height:0;
 //   overflow: hidden;
 // }
-
+.wrapper {
+  background:#eee;
+}
 .swiper-img {
   width:70%;
   height:250px
 }
 
 .swiper-pagination-bullet-active {
-  background:white;
+  background:#eee;
 }
 
 @media screen and (max-width: 1025px) {

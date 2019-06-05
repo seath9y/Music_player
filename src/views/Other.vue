@@ -61,6 +61,16 @@ export default {
     width: 840px;
     height: 640px;
 }
+.index__hd {
+    position: relative;
+    padding-top: 2.16667%;
+    padding-bottom: 2%;
+}
+.swiper-slide {
+    height: 100%;
+    position: relative;
+    background:#eee;
+}
 @media screen and (max-width: 400px) {
 .other {
     width: 370px;

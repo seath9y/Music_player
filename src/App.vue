@@ -11,7 +11,6 @@
     <div class="footer">
       <Footer/>
     </div>
-
   </div>
 </template>
 
@@ -69,4 +68,5 @@ body {
     width: 100%
   }
 }
+
 </style>
