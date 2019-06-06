@@ -97,7 +97,7 @@ export default {
           document.querySelector('#range-time').value = value
           document.querySelector('#duration').textContent = duration.toFixed(2)
         }
-      }, 1000 / 30)
+      }, 1000)
     }
   },
   mounted () {
@@ -238,7 +238,7 @@ input[type=range]::-webkit-slider-thumb {
   position: absolute;
   bottom: 2px;
   font-size: small;
-  color: #aaaaaa;
+  color: #61bd12;
 }
 
 #duration {
@@ -246,7 +246,7 @@ input[type=range]::-webkit-slider-thumb {
   position: absolute;
   bottom: 2px;
   font-size: small;
-  color: #aaaaaa;
+  color: #61bd12;
 }
 
 @media screen and (max-width: 1024px) {
