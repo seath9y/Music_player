@@ -87,7 +87,7 @@ export default {
       setInterval(function () {
         let id = that.$store.state.currentId
         let audio = document.getElementById(`id-audio-${id}`)
-        if (id !== false) {
+        if (id !== false && audio.currentTime != null) {
           let currentTime = (audio.currentTime / 60).toFixed(2)
           let duration = audio.duration / 60
           document.querySelector('#currentTime').textContent = currentTime
