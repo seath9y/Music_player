@@ -1,29 +1,11 @@
 # music_player
+# spa单页应用
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+* ## todo
+![](https://github.com/seath9y/spa/blob/master/static/img/stodo.png)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* ## music
+![](https://github.com/seath9y/spa/blob/master/static/img/smusic.png)
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
